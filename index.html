@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H2YO Playtech Poster</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --h2yo-blue: #00AEEF;
+            --h2yo-dark-blue: #0033A0;
+            --text-dark: #2c3e50;
+            --text-light: #576574;
+            --bg-light: #f8f9fa;
+            --border-color: #e9ecef;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 2rem;
+        }
+
+        /* A4 aspect ratio: 210mm x 297mm */
+        .poster {
+            width: 840px; /* 210mm * 4 */
+            height: 1188px; /* 297mm * 4 */
+            background-color: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        header .h2yo-logo img {
+            width: 150px;
+        }
+
+        header .playtech-logo img {
+            width: 200px;
+        }
+
+        .main-content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .main-content h1 {
+            font-size: 84px;
+            font-weight: 900;
+            color: var(--h2yo-dark-blue);
+            margin: 0;
+            line-height: 1.1;
+        }
+
+        .main-content h2 {
+            font-size: 36px;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin: 10px 0 30px 0;
+        }
+
+        .visual-area {
+            margin-bottom: 40px;
+        }
+
+        .visual-area img {
+            max-width: 300px;
+            height: auto;
+        }
+
+        .benefits {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin-bottom: 40px;
+        }
+
+        .benefit-item {
+            flex: 1;
+            padding: 0 20px;
+        }
+
+        .benefit-item .icon {
+            font-size: 48px;
+            color: var(--h2yo-blue);
+            margin-bottom: 15px;
+        }
+
+        .benefit-item h3 {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin: 0 0 10px 0;
+        }
+
+        .benefit-item p {
+            font-size: 18px;
+            color: var(--text-light);
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        .cta-section {
+            background-color: var(--bg-light);
+            width: 100%;
+            padding: 30px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        .cta-steps {
+            text-align: left;
+            flex-basis: 65%;
+        }
+
+        .cta-steps h2 {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--h2yo-dark-blue);
+            margin: 0 0 20px 0;
+        }
+
+        .cta-steps p {
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin: 10px 0;
+        }
+        
+        .cta-steps p strong {
+            font-weight: 900;
+        }
+
+        .cta-icon {
+            flex-basis: 30%;
+            text-align: center;
+        }
+        
+        .cta-icon svg {
+            width: 150px;
+            height: 150px;
+        }
+
+        footer {
+            margin-top: 30px;
+            background: linear-gradient(45deg, var(--h2yo-blue), var(--h2yo-dark-blue));
+            color: white;
+            text-align: center;
+            padding: 25px;
+            border-radius: 20px;
+        }
+
+        footer h2 {
+            font-size: 36px;
+            font-weight: 700;
+            margin: 0 0 10px 0;
+            letter-spacing: 1px;
+        }
+
+        footer p {
+            font-size: 28px;
+            font-weight: 600;
+            margin: 0;
+        }
+        
+        footer p strong {
+            font-weight: 900;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="poster">
+        <header>
+            <div class="h2yo-logo">
+                <!-- Using the uploaded H2YO logo -->
+                <img src="https://storage.googleapis.com/gemini-prod-us-west1-4232/uploads/2024/08/14/h2yo_logo.png-47869912-5d1e-4f35-8a7a-a170467f1214.png" alt="H2YO Logo">
+            </div>
+            <div class="playtech-logo">
+                <!-- Using the uploaded Playtech logo -->
+                <img src="https://storage.googleapis.com/gemini-prod-us-west1-4232/uploads/2024/08/14/Playtech-logo-Pngsource-SHQ2U0KI.png-00b934fd-c28b-4d18-8729-29e6e23a1c92.png" alt="Playtech Logo">
+            </div>
+        </header>
+
+        <section class="main-content">
+            <h1>Upgrade Your Hydration</h1>
+            <h2>Fresh, <strong>full-flavor</strong> drinks with a smart energy boost.</h2>
+
+            <div class="visual-area">
+                <!-- Using the uploaded glass image -->
+                <img src="https://storage.googleapis.com/gemini-prod-us-west1-4232/uploads/2024/08/14/h2yo_glass.png-ddcfce70-615b-417a-9486-419b58e74144.png" alt="Glass of H2YO drink">
+            </div>
+
+            <div class="benefits">
+                <div class="benefit-item">
+                    <div class="icon">⚡</div>
+                    <h3>Stable Energy</h3>
+                    <p>Sweetened with <strong>NEOSWEET</strong> for a natural, zero-sugar boost without the crash.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="icon">🌿</div>
+                    <h3>Sustainable</h3>
+                    <p>Ditch the plastic and aluminum. Help the planet one sip at a time.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="icon">✨</div>
+                    <h3>Smart Boosts</h3>
+                    <p>Add a <strong>microdose of caffeine & premium vitamins</strong> to craft your perfect functional drink.</p>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <div class="cta-steps">
+                    <h2>How It Works</h2>
+                    <p><strong>1. CREATE</strong> your perfect drink on the screen.</p>
+                    <p><strong>2. SCAN</strong> the QR code on screen.</p>
+                    <p><strong>3. PAY & DISPENSE</strong> instantly!</p>
+                </div>
+                <div class="cta-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="var(--h2yo-dark-blue)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="15" y="10" width="70" height="80" rx="8"/>
+                        <line x1="15" y1="75" x2="85" y2="75"/>
+                        <path d="M35 85h30v5H35z"/>
+                        <rect x="35" y="30" width="30" height="30" />
+                        <path d="M40 35h5 M40 40h10 M40 45h5 M40 50h15 M50 35h10 M55 40h5 M50 45h10 M50 50h5"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <h2>LAUNCH OFFER: GET FREE YO-COINS!</h2>
+            <p>Load 2€, get <strong>30 FREE Yo-coins!</strong> &nbsp; | &nbsp; Load 5€, get <strong>90 FREE Yo-coins!</strong></p>
+        </footer>
+    </div>
+
+</body>
+</html>
