@@ -79,13 +79,29 @@
             color: var(--text-dark);
             margin: 10px 0 30px 0;
         }
+        
+        .image-placeholder {
+            width: 100%;
+            height: 250px;
+            border: 3px dashed var(--border-color);
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: var(--text-light);
+            font-size: 20px;
+            font-weight: 600;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-bottom: 30px;
+        }
 
         .benefits {
             display: flex;
             justify-content: space-around;
             width: 100%;
-            margin-top: 0; 
-            margin-bottom: 20px; /* Set margin to 20px */
+            margin-bottom: 30px;
         }
 
         .benefit-item {
@@ -116,17 +132,16 @@
         .cta-section {
             background-color: var(--bg-light);
             width: 100%;
-            padding: 30px; /* Restored padding to make it taller */
+            padding: 30px;
             border-radius: 20px;
             display: flex;
-            justify-content: space-between;
+            justify-content: center; /* Centered content */
             align-items: center;
             box-sizing: border-box;
         }
 
         .cta-steps {
             text-align: left;
-            flex-basis: 55%;
         }
 
         .cta-steps h2 {
@@ -134,6 +149,7 @@
             font-weight: 700;
             color: var(--h2yo-dark-blue);
             margin: 0 0 20px 0;
+            text-align: center;
         }
 
         .cta-steps p {
@@ -145,17 +161,6 @@
         
         .cta-steps p strong {
             font-weight: 900;
-        }
-
-        .cta-image-container {
-            flex-basis: 40%;
-            text-align: center;
-        }
-        
-        .cta-image-container img {
-            max-width: 100%;
-            height: auto;
-            max-height: 250px;
         }
 
         footer {
@@ -196,6 +201,10 @@
         <section class="main-content">
             <h1>Upgrade Your Hydration</h1>
             <h2>Fresh, <strong>full-flavor</strong> drinks with a smart energy boost.</h2>
+            
+            <div class="image-placeholder">
+                DESIGNER NOTE: Place a vibrant, high-quality lifestyle image here. <br> Show a person enjoying a refreshing drink in a modern office or social setting.
+            </div>
 
             <div class="benefits">
                 <div class="benefit-item">
@@ -221,9 +230,6 @@
                     <p><strong>1. CREATE</strong> your perfect drink.</p>
                     <p><strong>2. SCAN</strong> the QR code on screen.</p>
                     <p><strong>3. PAY & DISPENSE</strong> instantly!</p>
-                </div>
-                <div class="cta-image-container">
-                    <img src="assets/h2yo-glass.png" alt="H2YO Drink">
                 </div>
             </div>
         </section>
