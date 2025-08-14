@@ -63,31 +63,7 @@
             align-items: center;
             text-align: center;
             padding: 40px 0;
-            position: relative; /* Required for the background pseudo-element */
         }
-        
-        /* This pseudo-element places the glass image as a background */
-        .main-content::before {
-            content: '';
-            position: absolute;
-            top: 50px; /* Adjust vertical position */
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-image: url('assets/h2yo-glass.png');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: 350px; /* Adjust size of the glass */
-            opacity: 0.1; /* Make it subtle */
-            z-index: 0;
-        }
-
-        /* This ensures all direct children of main-content appear above the background */
-        .main-content > * {
-            position: relative;
-            z-index: 1;
-        }
-
 
         .main-content h1 {
             font-size: 84px;
@@ -108,7 +84,7 @@
             display: flex;
             justify-content: space-around;
             width: 100%;
-            margin-top: 100px; /* Increased margin to create space for background image */
+            margin-top: 40px;
             margin-bottom: 40px;
         }
 
@@ -150,7 +126,7 @@
 
         .cta-steps {
             text-align: left;
-            flex-basis: 65%;
+            flex-basis: 55%;
         }
 
         .cta-steps h2 {
@@ -171,14 +147,15 @@
             font-weight: 900;
         }
 
-        .cta-icon {
-            flex-basis: 30%;
+        .cta-image-container {
+            flex-basis: 40%;
             text-align: center;
         }
         
-        .cta-icon svg {
-            width: 150px;
-            height: 150px;
+        .cta-image-container img {
+            max-width: 100%;
+            height: auto;
+            max-height: 250px;
         }
 
         footer {
@@ -218,8 +195,8 @@
                 <img src="assets/h2yo-logo.png" alt="H2YO Logo">
             </div>
             <div class="playtech-logo">
-                <!-- For GitHub, place 'playtech-logo.png' in an 'assets' folder -->
-                <img src="assets/playtech-logo.png" alt="Playtech Logo">
+                <!-- Using SVG for better quality -->
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Playtech_logo.svg" alt="Playtech Logo">
             </div>
         </header>
 
@@ -252,14 +229,8 @@
                     <p><strong>2. SCAN</strong> the QR code on screen.</p>
                     <p><strong>3. PAY & DISPENSE</strong> instantly!</p>
                 </div>
-                <div class="cta-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="var(--h2yo-dark-blue)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="15" y="10" width="70" height="80" rx="8"/>
-                        <line x1="15" y1="75" x2="85" y2="75"/>
-                        <path d="M35 85h30v5H35z"/>
-                        <rect x="35" y="30" width="30" height="30" />
-                        <path d="M40 35h5 M40 40h10 M40 45h5 M40 50h15 M50 35h10 M55 40h5 M50 45h10 M50 50h5"/>
-                    </svg>
+                <div class="cta-image-container">
+                    <img src="assets/h2yo-glass.png" alt="H2YO Drink">
                 </div>
             </div>
         </section>
