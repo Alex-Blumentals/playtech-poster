@@ -63,7 +63,31 @@
             align-items: center;
             text-align: center;
             padding: 40px 0;
+            position: relative; /* Required for the background pseudo-element */
         }
+        
+        /* This pseudo-element places the glass image as a background */
+        .main-content::before {
+            content: '';
+            position: absolute;
+            top: 50px; /* Adjust vertical position */
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('assets/h2yo-glass.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 350px; /* Adjust size of the glass */
+            opacity: 0.1; /* Make it subtle */
+            z-index: 0;
+        }
+
+        /* This ensures all direct children of main-content appear above the background */
+        .main-content > * {
+            position: relative;
+            z-index: 1;
+        }
+
 
         .main-content h1 {
             font-size: 84px;
@@ -80,19 +104,11 @@
             margin: 10px 0 30px 0;
         }
 
-        .visual-area {
-            margin-bottom: 40px;
-        }
-
-        .visual-area img {
-            max-width: 300px;
-            height: auto;
-        }
-
         .benefits {
             display: flex;
             justify-content: space-around;
             width: 100%;
+            margin-top: 100px; /* Increased margin to create space for background image */
             margin-bottom: 40px;
         }
 
@@ -210,11 +226,6 @@
         <section class="main-content">
             <h1>Upgrade Your Hydration</h1>
             <h2>Fresh, <strong>full-flavor</strong> drinks with a smart energy boost.</h2>
-
-            <div class="visual-area">
-                <!-- For GitHub, place 'h2yo-glass.png' in an 'assets' folder -->
-                <img src="assets/h2yo-glass.png" alt="Glass of H2YO drink">
-            </div>
 
             <div class="benefits">
                 <div class="benefit-item">
